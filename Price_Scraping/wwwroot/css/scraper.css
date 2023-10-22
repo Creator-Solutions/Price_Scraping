@@ -1,0 +1,56 @@
+﻿.pageContainer .recentProducts {
+    width: 100%;
+    height: 45vh;
+    margin-top: 75px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 75px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.pageContainer .recentProducts .recentTopContainer {
+    width: 100%;
+    height: 35px;
+    display: flex;
+}
+
+.pageContainer .recentProducts .recentTopContainer .title {
+    font-size: 18px;
+    align-self: center;
+    margin-left: 15px;
+}
+
+.pageContainer .recentProducts .content {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pageContainer .recentProducts .content table {
+    width: 100%;
+    align-self: center;
+    margin: 15px auto;
+    overflow-y: auto;
+}
+
+.pageContainer .recentProducts .content table tr th {
+    width: auto;
+    height: 35px;
+    text-align: center;
+}
+
+.pageContainer .recentProducts .content table tr td {
+    text-align: center;
+    font-weight: 100;
+    height: 35px;
+}
+
+.pageContainer .recentProducts .content table .tableHead {
+    background-color: #fff;
+}
+
+.pageContainer .recentProducts .content table .tableBody:nth-child(odd) {
+    background-color: #C0C0C0;
+}

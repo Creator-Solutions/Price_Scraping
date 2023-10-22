@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Price List";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="pageContainer">
+    <div class="recentProducts">
+        <div class="recentTopContainer">
+            <span class="title">Recent Products</span>
+        </div>
+        <div class="content">
+            <table>
+                <tr class="tableHead">
+                    <th>Product Number</th>
+                    <th>Product Name</th>
+                    <th>Date Searched</th>
+                    <th>Product Price</th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr class="tableBody">
+                        <td>@Html.DisplayFor(modelItem => item.ProductId)</td>
+                        <td>
+                            <a href="@item.ProductLink" target="_blank">
+
+                                @Html.DisplayFor(modelItem => item.ProductName)
+                            </a>
+                            </td>
+                        <td>@Html.DisplayFor(modelItem => item.DateSearched)</td>
+                        <td>@Html.DisplayFor(modelItem => item.ProductPrice)</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
