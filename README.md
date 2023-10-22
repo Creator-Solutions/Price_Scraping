@@ -1,5 +1,5 @@
 <h1 align="center">
- Orchestra Framework
+ Takealot - Price Scraper
 </h1>
 <p align="center">
  Author: Owen Burns
